@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>we are learning js</h1>
+        <h1>a am h1</h1>
+    </div>
+    <script>
+        //targetNode.appendChild(childnode);
+        //creating new h2 element
+
+        var nEnode=document.createElement("h2");
+        var targetNode=document.getElementById("myid");
+        console.log(targetNode);
+
+        // //append new h2 to div
+        // targetNode.appendChild(nEnode);
+        // console.log(targetNode);
+
+
+        var targetNode=document.getElementById("myid");
+        //creating  and appending new element h2
+        targetNode.appendChild(document.createElement("h2"));
+        console.log(targetNode);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore method</title>
+</head>
+<body>
+    <div>
+        <h1>js framework</h1>
+        <ul id="myul">
+            <li>jquery</li>
+            <li id="myang">anguler js</li>
+            <li>react js</li>
+            <li id="myd3">D3 js</li>
+        </ul>
+    </div>
+    <script>
+        //syntax:parentnode.insert before(new node,ref node);
+        //when insert new element
+        //accessing parent mnode
+        var parentnode=document.getElementById("myul");
+        //creating new li element
+        var newNode=document.createElement("p");
+
+
+        //ading text using cintext text
+        newNode.textContent="backbone js";
+
+
+        //<li>backbone</li>
+        //accessing refrence node
+        var refNode=document.getElementById("myang");
+
+        //insert new element 
+        parentnode.insertBefore(newNode,refNode);
+        //parentnode.insertBefore(newNode,null);
+        console.log(parentnode);
+
+
+    //  //   when insert exsisting Element
+    //  var refNode=document.getElementById("myang");
+    //  var moveNode=document.getElementById("myd3");
+    //  document.getElementById("myul").insertBefore(moveNode,refNode);
+    </script>
+</body>
+</html>

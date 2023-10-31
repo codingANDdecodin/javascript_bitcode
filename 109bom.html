@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>window object</h1>
+    <button type="button" id="btn"> click </button>
+    <script>
+        function createwindow(){
+            window.open();
+        }
+        document.getElementById("btn").addEventListener("click",createwindow);
+        var newwindow=window.open();//open empty window
+        document.write(newwindow);//           onject window
+
+
+        var newwindow=window.open("https://www.myntra.com");
+
+
+        var newwindow=window.open("https://www.myntra.com/","_self");    //open in same window
+
+        var newwindow=window.open("https://www.myntra.com/","_blank");    //open in specific window size
+
+
+        var newwindow=window.open("","_blank","height=200,width=400",false);
+        newwindow.document.write("i am in new window");
+    </script>
+</body>
+</html>

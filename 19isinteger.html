@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=10;
+        document.write(a.isInteger()+"<br>");//false
+        document.write(Number.isInteger(1000)+"<br>"); //true
+        document.write(Number.isInteger(-100)+"<br>"); //true
+        document.write(Number.isInteger(100.45)+"<br>"); //false
+        document.write(Number.isInteger(0.10)+"<br>"); //false
+        document.write(Number.isInteger("100")+"<br>"); //false
+        document.write(Number.isInteger("hello")+"<br>"); //false
+
+        document.write(Number(true)+"<br>"); //1
+        document.write(Number(false)+"<br>"); //0
+        document.write(Number("1000")+"<br>");//1000
+        document.write(Number(10/"hello")+"<br>");//NaN
+    </script>
+</body>
+</html>

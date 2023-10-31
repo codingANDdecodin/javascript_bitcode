@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DAY as 1 - 31
+        //hours as numbers 0 - 23
+        // month as number 0-11 eg-1=feb
+        //weekday as number 0-6 ex=0=sun
+        var tarikh =new Date();
+        document.write(tarikh+"<br>");
+
+        document.write("hours "+tarikh.getHours()+"<br>");
+
+        document.write("minutes "+tarikh.getMinutes()+"<br>");
+
+        document.write("second "+tarikh.getSeconds()+"<br>");
+
+        document.write("date "+tarikh.getMilliseconds()+"<br>");
+
+        document.write("month "+tarikh.getMonth()+"<br>");
+
+        document.write("year "+tarikh.getFullYear()+"<br>");
+
+        document.write("day "+tarikh.getDay()+"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>construtor</title>
+</head>
+<body>
+    <script>
+
+
+        //class declaration
+
+        class mobile{
+
+            constructor(){
+
+                //instance member
+                this.a=12;
+                this.foo=function(){
+                    return "instance method";
+                };
+            }
+            //prototype member
+            display(){
+               return "prototype method";
+            }
+        }
+        var samsung=new mobile();
+        document.write(samsung.foo()+"<br>");
+        document.write(samsung.display()+"<br>");
+</script>
+</body>
+</html>

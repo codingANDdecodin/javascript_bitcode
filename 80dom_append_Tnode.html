@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>we are learning js</h1>
+        <h1>a am h1</h1>
+    </div>
+    <script>
+        //creatin new text node
+        var nTnode=document.createTextNode("text created by js in create.textnode method");
+        var targetNode=document.getElementById("myid");
+
+        //append new text node to div
+        targetNode.appendChild(nTnode);
+        console.log(targetNode);
+
+
+        // var targetNode=document.getElementById("myid");
+        // targetNode.appendChild(document.createTextNode("text created by js using createtext method"));
+        // console.log(targetNode);
+    </script>
+</body>
+</html>

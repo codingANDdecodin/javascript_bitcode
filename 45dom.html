@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>overwrite</h1>
+    <button id="mybutton" >click</button>
+
+    <script>
+
+        function disp1(){
+            alert("button clicked 1");
+        }
+
+        function disp2(){
+            alert("button clicked 2");
+        }
+
+        document.getElementById("mybutton").onclick=disp1;
+        document.getElementById("mybutton").onclick=disp2;
+    </script>
+</body>
+</html>

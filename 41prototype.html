@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mobile=function(model_no){
+              this.model=model_no;
+              this.price=30000;
+        };
+        var samsung=new mobile('galaxy');
+        var nokia=new mobile("3110");
+        
+        console.log(mobile);
+        //classname.propertype.property_name=value;
+        mobile.prototype.color="blue";
+        // samsung.color="blue";
+        // nokia.color="green";
+        // document.write(samsung+"<br>");
+        // document.write(nokia);
+        // samsung.ram=222;
+        // console.log(samsung);
+        console.log(nokia);
+        console.log(samsung.color);
+       // document.write(Object.keys(samsung));
+    </script>
+</body>
+</html>

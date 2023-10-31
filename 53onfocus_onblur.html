@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            outline: none;
+            border-radius: 10px;
+            border-width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" onfocus="efocus();" onblur="eblur();" id="text"/>
+
+    <script>
+            function efocus(){
+                document.getElementById('text').style.background='pink';
+               document.getElementById('text').style.borderColor='lightblue';
+
+            }
+
+            function eblur(){
+              document.getElementById('text').style.backgroundColor=null;
+                document.getElementById('text').style.borderColor=null;
+            }
+            
+    </script>
+</body>
+</html>

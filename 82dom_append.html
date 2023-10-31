@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>we are learning js</h1>
+        <h1>a am h1</h1>
+    </div>
+    <script>
+        //creating new element h2
+        var nEnode=document.createElement("h2");
+
+        //creating text node
+     var nTnode=document.createTextNode("text i  am create and append");
+
+        //creating new comment node 
+        var nCnode=document.createComment("comment from js of append");
+
+        //first we will apend new text node to new element node(h2)
+        nEnode.appendChild(nTnode);
+
+        //display what nenode have 
+           console.log(nEnode);
+
+        //append new commen node to new element node
+        nEnode.appendChild(nCnode) ;
+        //display how nenode looks
+        console.log(nEnode);
+
+        //targeting element where we all apend new node
+
+        var targetNode=document.getElementById("myid");
+        //console.log(targetNode);
+        
+        targetNode.appendChild(nEnode);
+        console.log(targetNode);
+
+    // </script>
+</body>
+</html>

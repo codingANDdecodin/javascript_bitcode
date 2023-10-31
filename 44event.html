@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--event binding throught html attribute-->>
+    <button type="button" onclick="display()";>click</button>
+
+    <button type="button" id="mybutton">click me</button>
+
+    <script>
+      //event handler is a function
+      function display(){
+        alert("hello js");
+      }
+
+      function show(){
+        document.write("hello from fun");
+      }
+
+      var btn=document.getElementById("mybutton");
+      console.log(btn);
+      btn.onclick=show;
+      btn.onclick=display;  //in this case it will perform this event handler it will not perform show handler
+//    it was a traditional method to binding event throught javascript 
+//     here we can not add to event handler to same event,if we add same event handler to same 
+//     event then it will perform last one which binding to that event
+    </script>
+</body>
+</html>

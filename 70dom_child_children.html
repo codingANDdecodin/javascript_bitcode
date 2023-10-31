@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid">
+        <!--this is comment-->we are learining js</h1>
+    <p id="myid1">i am paragraph</p>
+    <p id="myid2">
+     <span>i am span</span>i am paragraph </p>
+    <script>
+        // var result=document.getElementById("myid");
+        // //it include text node ,comment node and any white space-space tab,enter etc
+        // console.log(result.childNodes);
+        // //it ignor text node comment node any white space
+        // console.log(result.children);
+
+
+        var result1=document.getElementById("myid2");
+        //it include text node ,comment node and any white space, tab ,enter
+        console.log(result1.childNodes);
+        //it ignor text node,comment node,any other white space as node
+        console.log(result1.children);
+    </script>
+</body>
+</html>

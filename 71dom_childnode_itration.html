@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid">
+        <!--this is comment-->
+        <span> are learining js</span>
+    </h1> 
+    <p id="myid1">i am paragraph</p>
+    <p id="myid2"><span>i am span</span>i am paragraph </p>
+    <script>
+         var result=document.getElementById("myid");
+        // // acess all using loop with n lenght property
+        // //find lenght
+        // var cnlen=result.childNodes.length;
+        // console.log(cnlen);
+
+        var clen=result.children.length;
+        console.log(clen);
+
+        // //foe loop for chaild node
+        // for(let i=0;i<cnlen;i++){
+        //   console.log(result.childNodes[i]);
+        // }
+
+
+        //for loop for children
+        for(let i=0;i<clen;i++){
+            console.log(result.children[i]);
+        }
+    </script>
+</body>
+</html>

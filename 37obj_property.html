@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+            
+            fname:"abc",
+            lname:"lname"
+        }
+
+
+        Object.defineProperty(person,"address",{
+         //  //when configurable is false we can not edit and delete property
+             configurable:true,
+             value:"karve raod"
+       
+        // // if enumrateble is false then u cannot itrrate value
+        //    enumratable:true
+
+
+        //  // if writable is false then we cannot reasign and rename value
+        //  writable:false
+
+         })
+
+         for (let key in person){
+            console.log(key);
+         }
+               console.log(person.address);
+        // document.write(person);
+        // alert(person.fname);
+        // person.fname="om";
+        // alert(person.fname);
+        // delete person.lname;
+        // alert(person.lname);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class declration -paramerised contrutor
+
+        class mobile{
+            constructor(model_no,color){
+                this.model=model_no;
+                this.color=color;
+            }
+            show(){
+                return this.model+"price rs.30000 "+this.color;
+            }
+        }
+        var nokia=new mobile('galaxy','white');
+        var lg=new mobile('note 3','black');
+        document.write(nokia.show()+"<br>");
+        document.write(lg.show());
+    </script>
+</body>
+</html>

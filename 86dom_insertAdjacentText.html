@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentText method</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="myh1">heading 1</h1>
+        <h2 id="myh2">heading 2</h2>
+        <h3 id="myh3">heading 3</h3>
+    </div>
+    <script>
+        //targetelement.insertAdjustText("position",text);
+        //position:"beforebegin","afterbegin",'beforeend','afterend'
+        var parentnode=document.getElementById("mydiv");
+        var h=document.getElementById("myh2");
+        var txt="helllo world";
+
+        h.insertAdjacentText('beforebegin',txt);
+        h.insertAdjacentText('beforeend',txt);
+        h.insertAdjacentText('afterbegin',txt);
+        h.insertAdjacentText('afterend',txt);
+        console.log(h);
+    </script>
+</body>
+</html>

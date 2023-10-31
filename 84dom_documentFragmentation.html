@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>we are learning js</h1>
+        <h1>a am h1</h1>
+    </div>
+    <script>
+        document.write("document fragmentation is not concept of DOM");
+
+
+        //targeting element where we all append new nodes
+
+        var targetNode=document.getElementById("myid");
+
+        //creating empty element fragment
+        var df=document.createDocumentFragment();
+
+        //creating new element h3
+        var hnode=document.createElement("h3");
+
+        //creating new p element
+        var pnode=document.createElement("p");
+
+        //text for new h3 and p element
+        hnode.textContent="h3 from javascript";
+        pnode.textContent="p from javascript";
+
+        //append nodes to doumentfregmentation
+        df.appendChild(hnode);
+        df.appendChild(pnode);
+
+        console.log(df)
+
+        //after appending df has 2 element and text node something like below
+       /* #Document-fragment:
+                             <h3> h3 from javascript</h3>
+                             <p>p from javascript</p>
+            appending documentfregment df to div 
+            once u uppend df to div the df is empty*/
+
+            // targetNode.appendChild(df);
+            // console.log(targetNode);
+            // //now df is empty
+            // console.log(df);
+
+    </script>
+</body>
+</html>

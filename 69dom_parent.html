@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" id="myid">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>we are learining js <!--this is comment--></h1>
+    <p id="myid1">
+        i am paragraph
+    </p>
+    <script>
+        var result=document.getElementById("myid");
+       // console.log(result);
+         var result1=document.getElementById("myid1");
+        // it will return parent wether parent is element node or not
+        console.log(result.parentNode);
+        //it will retur null if the parent is not an element
+        console.log(result.parentElement);//null
+
+        // //here both return parent bcause both have parent element
+        // console.log(result1.parentNode);
+        // console.log(result1.parentElement); //null
+
+    </script>
+</body>
+</html>

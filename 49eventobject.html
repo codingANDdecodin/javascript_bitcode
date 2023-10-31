@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p1 id="myp">click me</p1>
+
+    <script>
+         //document.getElementById("myp").addEventListener("click",function(e){
+        //     console.log(e);
+        //     console.log(e.type);
+        //     console.log(e.clientX);
+        //     console.log(e.clientY);
+        //     console.log(e.target);
+        //     console.log(e.currentTarget);
+        // });
+
+        var btn=document.getElementById("myp");
+        var handler=function(event){
+            document.write("hii");
+            switch(event.type){
+                case "click":
+                    alert("click event");
+                    break;
+                case "mouseover":
+                    event.target.style.backgroundColor="red";
+                    break;
+                case "mouseout":
+                    event.target.style.backgroundColor="";
+                    break; 
+                default:
+                    console.log("hii");           
+            };
+
+            btn.onclick=handler();
+            btn.onmouseover=handler;
+            btn.onmouseout=handler;
+        }
+    </script>
+</body>
+</html>

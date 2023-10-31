@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom text manuplation</title>
+</head>
+<body>
+    <h2 id="myh2">hello world</h2>
+    <script>
+        var h=document.getElementById("myh2");
+        var rightside=h.firstChild.splitText(3);//(lenght)//je lenght dile aahe tevde sodun baki la new node krnar
+        console.log(h);
+        console.log(rightside)
+    </script>
+</body>
+</html>
